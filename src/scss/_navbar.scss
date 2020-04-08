@@ -1,0 +1,146 @@
+/* -------------------------------------------------------------------------- */
+/*                                 Nabar Start                                */
+/* -------------------------------------------------------------------------- */
+
+.navbar{
+    display:  flex;
+    padding:2rem 2rem;
+    box-shadow: -5px 1px 8px #00000045;
+    background-color: #fff;
+    justify-content: center;
+    &-logo{
+        flex:0 1 20%
+    }
+    &-ellipsis{
+        display: none;
+    }
+    &-list{
+        flex: 0 1 60%;
+        display: flex;
+        list-style: none;
+        justify-content: center;
+        color: $mainColor;
+        margin-left: 30px;
+        &__item{
+            margin-right: 30px;
+            cursor: pointer;
+            a{
+                text-decoration: none;
+                color:#000;
+            }
+            
+        }
+    }
+    &-buttons{
+        margin-right:20px;
+        &-fill{
+            @include btn($orange,#fff,0.3rem 1.8rem)
+
+        }
+        &-stroke{
+            color:#000;
+            @include btn()
+        }
+    }
+}
+
+/* -------------------------------------------------------------------------- */
+/*                  Fixing Media Query And toggle the navbar                  */
+/* -------------------------------------------------------------------------- */
+
+@media (max-width: 991.98px) { 
+    .navbar{
+        &-logo{
+    display: none;        }
+        font-size: 1.2rem;
+        justify-content: space-around;
+        &-list{
+            display: block;
+            position: absolute;
+            background-color: #fff;
+            padding: 3rem 2rem;
+            margin-top: 20px;
+            display: none;
+
+            &__item{
+                margin: auto;
+                margin-bottom: 10px;
+                color: #000;
+                a{
+                    color: #000;
+                    
+                }
+
+            }
+        }
+        &-ellipsis{
+            display: block;
+            margin-left: 50px;
+            position: relative;
+        }
+        &-collapse{
+            position: relative;
+        }
+        &-buttons{
+            margin-right: 19px;
+            &-fill{
+                font-size:1.2rem;
+    
+            }
+            &-stroke{
+                font-size:1.2rem
+            }
+        }
+    }
+    .fa-ellipsis-v{
+        color: black;
+    }
+ }
+.faded{
+    background-color: inherit;
+    box-shadow: inherit;
+        color: #fff;
+    .navbar-list{
+        color: #fff;
+        margin: 0 auto;
+    text-align: center;
+    a{
+        color: #ffffff;
+    }
+    }
+    .navbar-buttons-fill{
+        @include btn(#fff,$orange,0.3rem 1.8rem,5px,#fff);
+        margin-left: 10px
+        
+
+    }
+    .navbar-buttons-stroke{
+        color:#000;
+        @include btn(inherit,#ffffff, 0.3rem 0.5rem,5px ,#fff)
+    }
+}
+
+/* ------------------------------ Mobile Device ----------------------------- */
+
+@media (max-width: 575.98px) { 
+    .faded{
+        .navbar-list{
+        color: #000;
+        margin: 0 auto;
+    text-align: center;
+
+}
+    .navbar-buttons-fill{
+        @include btn(#fff,$orange,0.3rem 1.8rem,5px,#fff);
+        margin-left: 10px;
+        font-size: 10px;
+
+    }
+    .navbar-buttons-stroke{
+        color:#000;
+        @include btn(inherit,#ffffff, 0.3rem 0.5rem,5px ,#fff);
+        font-size: 10px;
+
+    }
+}
+}

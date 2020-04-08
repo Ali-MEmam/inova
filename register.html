@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./themify-icons.css">
+    <link rel="stylesheet" href="./dist/css/base.css">
+    <script src="https://kit.fontawesome.com/5f21fd80f5.js" crossorigin="anonymous"></script>
+</head>
+<body>
+
+<!-- ----------------------------------------------------------------------- -->
+<!--                          Navbar Section Start                           -->
+<!-- ----------------------------------------------------------------------- -->
+
+    <navbar class="navbar">
+        <div class="navbar-logo"></div>
+        <div class="navbar-collapse">
+        <div class="navbar-ellipsis"><i class="fas fa-ellipsis-v"></i>    </div>
+
+        <ul class="navbar-list">
+            <li class="navbar-list__item"><a href="./index.html">الرئيسية</a> </li>
+            <li class="navbar-list__item"> التقارير</li>
+            <li class="navbar-list__item"> الاخبار</li>
+            <li class="navbar-list__item"> المعالم الاسياحيه</li>
+            <li class="navbar-list__item"> المطلوبات</li>
+        </ul>
+    </div>
+        <section class="navbar-buttons">
+            <a href="#" class="navbar-buttons-fill">تقرير جديد</a>
+            <a href="#" class="navbar-buttons-stroke">تسجيل الدخول</a>
+        </section>
+    </navbar>
+
+<!-- ----------------------------------------------------------------------- -->
+<!--                           Navbar Section End                            -->
+<!-- ----------------------------------------------------------------------- -->
+
+<!-- ----------------------------------------------------------------------- -->
+<!--                           login Section Start                           -->
+<!-- ----------------------------------------------------------------------- -->
+
+    <section class="login">
+        <form class="login-form" id="loginForm">
+            <h3 class="login-form__header">انشاء حساب جديد</h3>
+            <input class="login-form__input" type="text" name="username" placeholder="الاسم بالكامل*">
+            <input class="login-form__input" type='password' name="email" placeholder="ادخل عنوان البريد الالكترونى*">
+            <input class="login-form__input" type="text" name="mobile" placeholder="رقم التلفون*">
+            <input class="login-form__input" type="text" name="passowrd" placeholder="كلمه المرور*">
+            <input class="login-form__input" type="text" name="birthdate" placeholder="تاريخ الميلاد">
+            <button class="login-form__button" type="submit">انشاء حساب</button>
+        </form>
+        <div class="login-newuser">
+            <p class="login-newuser__header">لديك حساب بالفعل</p>
+            <a href="./login.html" class="login-newuser__button">تسجيل الدخول</a>
+            <p class="text-center">او</p>
+            <div class="login-newuser__media">
+                <div class="login-newuser__media-facebook"><i class="fab fa-facebook"></i></div>
+                <div class="login-newuser__media-facebook"><i class="fab fa-twitter"></i></div>
+                <div class="login-newuser__media-facebook"><i class="fab fa-google-plus-g"></i></div>
+
+            </div>
+        </div>
+    </section>
+
+<!-- ----------------------------------------------------------------------- -->
+<!--                            login Section End                            -->
+<!-- ----------------------------------------------------------------------- -->
+<!-- ----------------------------------------------------------------------- -->
+<!--                          Footer Section Start                           -->
+<!-- ----------------------------------------------------------------------- -->
+<footer class="footer">
+    <p class="footer-header"> هذا النص مثال لنص يمكن ان يستبدل فى نفس المساحه ولقد تم توليد هذا النص ليستبدل فى اى وقت هذا النص مثال لنص يمكن ان يستبدل فى نفس المساحه ولقد تم توليد هذا النص ليستبدل فى اى وقت</p>
+    <div class="footer-info">
+        <div class="footer-info__mobile"> تلفون : 01023445566  022233456</div>
+        <div class="footer-info__mobile"> الايميل : simple@gmail.com  </div>
+    </div>
+    <div class="footer-media">
+        <div class="login-newuser__media-facebook"><i class="fab fa-facebook"></i></div>
+        <div class="login-newuser__media-facebook"><i class="fab fa-twitter"></i></div>
+        <div class="login-newuser__media-facebook"><i class="fab fa-google-plus-g"></i></div>
+    </div>
+    <div class="footer-copyright">&copy; 2018 travelzad alrights revserd.</div>
+</footer>
+
+<!-- ----------------------------------------------------------------------- -->
+<!--                           footer section end                            -->
+<!-- ----------------------------------------------------------------------- -->
+<script src="script.js"></script>
+
+    <script src="register.js"></script>
+</body>
+</html>

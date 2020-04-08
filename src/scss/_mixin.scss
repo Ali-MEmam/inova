@@ -1,0 +1,21 @@
+@mixin btn($bg:#fff,$color:#000000,$padding: 0.3rem 0.5rem,$radis:5px,$border:$orange) {
+    text-decoration: none;
+    padding:$padding;
+    font-size: 1.4rem;
+    border-radius:$radis;
+    border: 2px solid $border;
+    -webkit-border-radius:$radis;
+    -moz-border-radius:$radis;
+    -ms-border-radius:$radis;
+    -o-border-radius:$radis;
+    color:$color;
+    background-color: $bg;
+}
+@mixin line($color : $orange) {
+    content:" ";
+    width: 110px;
+    height: 2px;
+    background-color: $color;
+    display: block;
+    margin-top: 10px;
+}

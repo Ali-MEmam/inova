@@ -1,0 +1,106 @@
+/* -------------------------------------------------------------------------- */
+/*                             Login And Register                             */
+/* -------------------------------------------------------------------------- */
+
+.login{
+    width: 50%;
+    margin:10rem auto;
+    display: flex;
+    align-items: baseline;
+    padding: 2rem;
+    // margin-top: 10rem;
+    background-color: #fff;
+    box-shadow: 2px 1px 9px #dcd5d545;;
+    &-form{
+        display: flex;
+        flex-direction: column;
+        padding: 2rem;
+        justify-content: center;
+        flex-wrap: nowrap;
+        width: 100%;
+        margin: 0 auto;
+        flex: 0 1 50%;
+        border-left: 1px solid #8080801f;
+        &__header{
+            margin-bottom: 2rem;
+        }
+        &__input{
+            margin-bottom: 2rem;
+            flex: 0 1 51%;
+            padding: 1rem 0.7rem;
+            border: 1px solid #e6e6e6;
+            border-radius: 5px;
+            font-size: 16px;
+        }
+        &__button{
+            flex: 0 1 51%;
+            @include btn($orange,#fff,1rem 1rem)
+
+        }
+        &__information{
+            margin-bottom: 3rem;
+            &-link{
+                float: left;
+                font-size: 1.2rem;
+                color: $orange;
+            }
+            &-check{
+                margin-left: 1rem;
+            }
+        }
+    }
+    &-newuser{
+        flex: 0 1 50%;
+
+        &__header{
+            font-weight: 400;
+            text-align: center;
+        }
+        &__button{
+            @include btn();
+            display: block;
+            text-align: center;
+            margin: 1rem;
+        }
+        &__media{
+            display: flex;
+            margin: 1rem auto 0;
+            font-size:2.5rem;
+            justify-content: center;
+            &-facebook{
+                .fab{
+                    font-size:3.5rem;;
+                    color:#0b3e93
+                    
+
+                }
+                .fa-google-plus-g{
+                    color:#dd4b39
+                }
+                .fa-twitter{
+                    color: #55acee;
+                }
+            }
+        }
+    }
+}
+label{
+    font-size: 1.2rem;
+}
+/* -------------------------------------------------------------------------- */
+/*                             Fixing Media Query                             */
+/* -------------------------------------------------------------------------- */
+@media (max-width: 991.98px) {
+    .login{
+        width :80%;
+        flex-wrap: wrap;
+        &-form{
+            flex: 0 1 100%;
+            border-bottom: 1px solid #8080801f;
+            border-left: none;
+        }
+        &-newuser{
+            flex: 0 100%;
+        }
+    }
+ }
